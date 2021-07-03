@@ -68,7 +68,7 @@ if menu=='Diabetes Predictor':
 
 # Heart Disease
 if menu=='Heart Disease Predictor':
-    image=Image.open("Heart-Disease-Prediction/Application_Logo.png")
+    image=Image.open("Application_Logo.png")
     ST.image(image,use_column_width=True)
 
     filename2 = 'Heart-Disease-Prediction/Heart-Disease-Prediction-rfc-model.pkl'
@@ -112,7 +112,7 @@ if menu=='Heart Disease Predictor':
 
 if menu=='Kidney Disease Predictor':
 
-    image=Image.open("Kidney-Disease-Prediction/Kidney_Logo.png")
+    image=Image.open("Kidney_Logo.png")
     ST.image(image,use_column_width=True)
 
 
@@ -150,7 +150,7 @@ if menu=='Kidney Disease Predictor':
 
 
 if menu=='Liver Disease Predictor':
-    image=Image.open("Liver-Disease-Prediction/Liver_Logo.png")
+    image=Image.open("Liver_Logo.png")
     ST.image(image,use_column_width=True)
 
     filename4 = 'Liver-Disease-Prediction/Liver-Disease-Model.pkl'
