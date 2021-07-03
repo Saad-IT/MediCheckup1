@@ -26,11 +26,11 @@ if menu=='Home':
     ST.write("** Syed Saad Ali **")
 if menu=='Diabetes Predictor':
     # Diabetes Predictor
-    image=Image.open("Diabetes-Predictor-main\\Application_Logo.png")
+    image=Image.open("Diabetes-Predictor-main/Application_Logo.png")
     ST.image(image,use_column_width=True)
 
 
-    filename1 = 'Diabetes-Predictor-main\\diabetes-prediction-rfc-model.pkl'
+    filename1 = 'Diabetes-Predictor-main/diabetes-prediction-rfc-model.pkl'
     classifier = pickle.load(open(filename1, 'rb'))
 
 
@@ -57,21 +57,21 @@ if menu=='Diabetes Predictor':
 
         if my_prediction==1:
             ST.info("OOPS! you have diabetes")
-            image=Image.open("Diabetes-Predictor-main\\Diabetes_Sad.png")
+            image=Image.open("Diabetes-Predictor-main/Diabetes_Sad.png")
             ST.image(image,use_column_width=True)
         
         else:
             ST.info("Great! you don't have diabetes")
-            image=Image.open("Diabetes-Predictor-main\\No_Diabetes_Happy.png")
+            image=Image.open("Diabetes-Predictor-main/No_Diabetes_Happy.png")
             ST.image(image,use_column_width=True)
 
 
 # Heart Disease
 if menu=='Heart Disease Predictor':
-    image=Image.open("Heart-Disease-Prediction\\Application_Logo.png")
+    image=Image.open("Heart-Disease-Prediction/Application_Logo.png")
     ST.image(image,use_column_width=True)
 
-    filename2 = 'Heart-Disease-Prediction\\Heart-Disease-Prediction-rfc-model.pkl'
+    filename2 = 'Heart-Disease-Prediction/Heart-Disease-Prediction-rfc-model.pkl'
     lr= pickle.load(open(filename2, 'rb'))
     
     age=ST.number_input("Age (Years) eg. 35",min_value=0,value=0,step=1,format="%d")
@@ -103,20 +103,20 @@ if menu=='Heart Disease Predictor':
 
         if my_prediction2==1:
             ST.info("OOPS! you have Heart Disease")
-            image=Image.open("Heart-Disease-Prediction\\Sad_Image.png")
+            image=Image.open("Heart-Disease-Prediction/Sad_Image.png")
             ST.image(image,use_column_width=True)
         else:
             ST.info("Great! you don't have Heart Disease")
-            image=Image.open("Heart-Disease-Prediction\\Happy_Image.png")
+            image=Image.open("Heart-Disease-Prediction/Happy_Image.png")
             ST.image(image,use_column_width=True)
 
 if menu=='Kidney Disease Predictor':
 
-    image=Image.open("Kidney-Disease-Prediction\\Kidney_Logo.png")
+    image=Image.open("Kidney-Disease-Prediction/Kidney_Logo.png")
     ST.image(image,use_column_width=True)
 
 
-    filename3 = 'Kidney-Disease-Prediction\\kidney_model.pkl'
+    filename3 = 'Kidney-Disease-Prediction/kidney_model.pkl'
     m1= pickle.load(open(filename3, 'rb'))
 
 
@@ -150,10 +150,10 @@ if menu=='Kidney Disease Predictor':
 
 
 if menu=='Liver Disease Predictor':
-    image=Image.open("Liver-Disease-Prediction\\Liver_Logo.png")
+    image=Image.open("Liver-Disease-Prediction/Liver_Logo.png")
     ST.image(image,use_column_width=True)
 
-    filename4 = 'Liver-Disease-Prediction\\Liver-Disease-Model.pkl'
+    filename4 = 'Liver-Disease-Prediction/Liver-Disease-Model.pkl'
     m2= pickle.load(open(filename4, 'rb'))
     
     Total_Bilirubin=ST.number_input("Total_Bilirubin (mg/dL) eg: 0.9")
